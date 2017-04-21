@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>58283384-DD4D-4BB1-9663-EBD6D569CFCF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Zabbkit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>055f4d49-a490-40d6-be14-18ec14694bea</key>
+		<string>https://dmitry.volk@svn.inside.cactussoft.biz/shtirlits</string>
+		<key>3B3CD4F8-33D4-4B85-B793-8A15A9A5EC5A</key>
+		<string>https://svn.inside.cactussoft.biz/shtirlits</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/TRUNK/Zabbkit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>055f4d49-a490-40d6-be14-18ec14694bea</key>
+		<string>../../../..</string>
+		<key>3B3CD4F8-33D4-4B85-B793-8A15A9A5EC5A</key>
+		<string>../../../../../ZabbKit</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>055f4d49-a490-40d6-be14-18ec14694bea</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>055f4d49-a490-40d6-be14-18ec14694bea</string>
+			<key>IDESourceControlWCCName</key>
+			<string>shtirlits</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3B3CD4F8-33D4-4B85-B793-8A15A9A5EC5A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZabbKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>

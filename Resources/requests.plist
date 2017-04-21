@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>user.login</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "user.login",
+        "params": {
+        "user": "%@",
+        "password": "%@"
+        },
+        "id": 1
+        }
+    </string>
+    <key>user.logout</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "user.logout",
+        "id": %d,
+        "auth": "%@"
+        }
+    </string>
+	<key>hostgroups.get</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "hostgroup.get",
+        "params": {
+            "output": ["groupid","name"]
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+	<key>hosts.get</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "host.get",
+        "params": {
+            "output": ["hostid","host"],
+            "groupids": "%@"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>allhosts.get</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "host.get",
+        "params": {
+            "output": ["hostid","host"]
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>trigger.getByIds</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "trigger.get",
+        "params": {
+        "expandDescription":true,
+        "triggerids": [%@],
+        "output": ["triggerid", "description", "priority", "value", "url", "comments"]
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>host.getTriggers</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "trigger.get",
+        "params": {
+            "expandDescription":true,
+            "hostids": "%@",
+            "active": true,
+            "sortfield": ["description"],
+            "output": ["triggerid", "description", "priority", "value", "url", "comments"]
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>group.getTriggers</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "trigger.get",
+        "params": {
+            "expandDescription":true,
+            "groupids": "%@",
+            "active": true,
+            "sortfield": ["description"],
+            "output": ["triggerid", "description", "priority", "value", "url", "comments"]
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>alltriggers.get</key>
+	<string>{
+        "jsonrpc": "2.0",
+        "method": "trigger.get",
+        "params": {
+            "selectHosts":["hostid","host"],
+            "expandDescription":true,
+            "output": ["triggerid", "description", "priority", "value", "url", "comments"],
+            "monitored":true,
+            "sortfield":"description"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>event.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "event.get",
+        "params": {
+            "output": "extend",
+            "value": [0, 1],
+            "triggerids": "%@",
+            "sortfield": "eventid",
+            "sortorder": "DESC",
+            "source": "0"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>eventsCount.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "event.get",
+        "params": {
+            "output": "count",
+            "value": [0, 1],
+            "triggerids": "%@",
+            "source": "0"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>allevents.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "event.get",
+        "params": {
+            "output": "extend",
+            "value": [0, 1],
+            "time_from": %f,
+            "source": "0"
+        },
+        "auth": "%@",
+        "id": %d,
+        "limit": %d
+        }
+    </string>
+    <key>host.getEvents</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "event.get",
+        "params": {
+            "output": "extend",
+            "value": [0, 1],
+            "hostids": "%@",
+            "time_from": %f,
+            "source": "0"
+        },
+        "auth": "%@",
+        "id": %d,
+        "limit": %d
+        }
+    </string>
+    <key>group.getEvents</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "event.get",
+        "params": {
+            "output": "extend",
+            "value": [0, 1],
+            "groupids": "%@",
+            "time_from": %f,
+            "source": "0"
+        },
+        "auth": "%@",
+        "id": %d,
+        "limit": %d
+        }
+    </string>
+    <key>hostgraphs.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "graph.get",
+        "params": {
+            "hostids": "%@",
+            "output": ["graphid", "name"],
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>groupgraphs.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "graph.get",
+        "params": {
+            "groupids": "%@",
+            "output": ["graphid", "name"],
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>allgraphs.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "graph.get",
+        "params": {
+            "output": ["graphid", "name"],
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>hostitems.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "item.get",
+        "params": {
+            "hostids": "%@",
+            "output": ["itemid", "name", "key_", "lastvalue", "value_type", "units"],
+            "selectHosts": ["hostid", "host"],
+            "selectGraphs": "extend"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>groupitems.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "item.get",
+        "params": {
+            "groupids": "%@",
+            "output": ["itemid", "name", "key_", "lastvalue", "value_type", "units"],
+            "selectHosts": ["hostid", "host"],
+            "selectGraphs": "extend"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+    <key>allitems.get</key>
+    <string>{
+        "jsonrpc": "2.0",
+        "method": "item.get",
+        "params": {
+            "output": ["itemid", "name", "key_", "lastvalue", "value_type", "units"],
+            "selectHosts": ["hostid", "host"],
+            "selectGraphs": "extend"
+        },
+        "auth": "%@",
+        "id": %d
+        }
+    </string>
+</dict>
+</plist>
